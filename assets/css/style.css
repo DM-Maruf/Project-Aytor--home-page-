@@ -1,0 +1,1108 @@
+/*
+Theme Name: Aytor
+Version: 1.0.0
+Author:
+Author URI: 
+Tags: 
+Description:
+
+
+
+table of contents
+========================
+
+**** common section ****
+1) header section 
+    1.1) top bar
+    1.2) nav bar
+2) footer section 
+    1.1) footer top bar section
+    1.2) footer info section
+    1.3) footer overlay section
+**** home page ****
+1)main section 
+    1.1) banner section
+        1.1.1) large screen banner section
+        1.1.2) mini screen banner section
+    1.2) product gellary section
+    1.3) new arrivals products section
+    1.4) offer section
+    1.5) best seller product section   
+    1.6) deals section
+    1.7) special offer section
+    1.8) latest news section  
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* common css start */
+.text-justify{
+    text-align: justify;
+}
+:root {
+    --primary-color-light: #ff6f61;
+    --primary-color-dark: #ff5645;
+    --hover-color: #151a32;
+	--text-color: #11161e;
+	--light-color: #fff;
+	--paragraph-color: #444;
+	--background-color-light: #f1f1f1;
+	--background-color-dark: #f1f3f4;
+	--black: #000;
+	--a6aab7: #a6aab7;
+    --primary-font: "Josefin Sans", sans-serif;
+    --secondary-font: "Roboto", sans-serif;
+}
+body{
+    --secondary-font: "Roboto", sans-serif; 
+}
+h1,h2,h3,h4,h5,h6,a,p{
+    --primary-font: "Josefin Sans", sans-serif;
+}
+/* common css end */
+
+/* common section start */
+/* header section start */
+
+/* top bar css section start  */
+#top-bar{
+    background-color: var(--hover-color);
+    padding: 11px 0;
+}
+#top-bar .top-bar-start i{
+    color: var(--primary-color-light);
+}
+#top-bar .top-bar-start p,
+#top-bar .top-bar-end ul li a{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 175%;
+    color: var(--light-color);
+}
+#top-bar .top-bar-start span{
+    line-height: 162%;
+    color: var(--primary-color-light);
+}
+#top-bar .top-bar-end ul li select{
+    background: none;
+    border: none;
+    color: var(--light-color);
+}
+#top-bar .top-bar-end ul.settings li{
+    border-right: 1px solid  #8C8C8C;
+    padding: 0 20px;
+}
+#top-bar .top-bar-end .social-links{
+    padding-left: 20px;
+}
+#top-bar .top-bar-end .social-links li a i{
+    padding-right: 10px;
+}
+#top-bar .top-bar-end .social-links li a i:hover{
+    color: var(--primary-color-light);
+}
+/* top bar css section end */
+
+/* nav bar css section start */
+#nav .nav-icon li a i{
+    color: var(--hover-color);
+    padding: 0 20px;
+}
+#menu .nav-contant li a{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--text-color);
+}
+#menu .nav-contant li a:hover{
+    color: var(--primary-color-light); 
+}
+/* nav bar css section end */
+
+/* header section end */
+/* common section end */
+
+
+
+/* main section start */
+
+/*  banner section css start */
+
+/* large screen banner section css start */
+#banner .bannerSlider .slide-img{
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#banner .bannerSlider .banner-cnt h5{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: #1d1d1d;
+    padding-bottom: 14px;
+}
+#banner .bannerSlider .banner-cnt h2{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 116%;
+    color: #1d1d1d;
+    padding-bottom: 16px;
+}
+#banner .bannerSlider .banner-cnt p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #1d1d1d;
+    width: 455px;
+    line-height: 28px;
+    padding-bottom: 29px;
+}
+#banner .bannerSlider .banner-cnt a{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: var(--light-color);
+    padding: 13px 38px;
+    background-color: var(--primary-color-light);
+}
+#banner .bannerSlider .banner-cnt a i{
+    padding-left: 10.9px;
+}
+#banner{
+    position: relative;
+}
+#banner .bannerDots{
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#banner .bannerDots li{
+    display: inline-block;
+}
+#banner .bannerDots li button{
+    width: 10px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: var(--light-color);
+    border: none;
+    color: transparent;
+    margin-right: 5.5px;
+}
+#banner .bannerDots li.slick-active button{
+    width: 29px;
+    background-color: var(--primary-color-light);
+}
+/* large screen banner section css end */
+
+/* mini screen banner section css start */
+#smBanner .slide{
+    position: relative;
+}
+#smBanner .banner-cnt{
+    position: absolute;
+    bottom: 20%;
+    left: 2%
+}
+#smBanner .smBannerSlider .banner-cnt h5{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: #1d1d1d;
+    padding-bottom: 14px;
+}
+#smBanner .smBannerSlider .banner-cnt h2{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 116%;
+    color: #1d1d1d;
+    padding-bottom: 16px;
+}
+#smBanner .smBannerSlider .banner-cnt p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #1d1d1d;
+    width: 455px;
+    line-height: 28px;
+    padding-bottom: 29px;
+}
+#smBanner .smBannerSlider .banner-cnt a{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: var(--light-color);
+    padding: 13px 38px;
+    background-color: var(--primary-color-light);
+
+}
+#smBanner .smBannerSlider .banner-cnt a i{
+    padding-left: 10.9px;
+}
+/* mini screen banner section css start */
+
+/* banner section css end */
+
+/* product gellary section css start */
+#gellary{
+    padding-top: 97px;
+    padding-bottom: 120px;
+}
+#gellary .overlay{
+    position: absolute;
+    background-color: #11161e;
+    opacity: 0.4;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    visibility: hidden;
+}
+#gellary .overlay h3{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 133%;
+    color: var(--light-color);
+}
+#gellary .overlay a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--light-color);
+}
+#gellary .img-1:hover .overlay,
+#gellary .img-2:hover .overlay,
+#gellary .img-3:hover .overlay{
+    visibility: visible;
+    transform: 0.5s ease;
+}
+/* product gellary section css end */
+
+/* new arrivals products section css start */
+#newProducts{
+    padding-bottom: 100px;
+}
+#newProducts h2{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: var(--text-color);
+    padding-bottom: 16px;
+}
+#newProducts .newProducts{
+    text-align: center;
+    border: 0.5px solid var(--light-color);
+}
+#newProducts .newProducts h6{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--paragraph-color);
+    padding-bottom: 5px;
+    padding-top: 24px;
+}
+#newProducts .newProducts h3{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: var(--text-color);
+    padding-bottom: 11px;
+}
+#newProducts .newProducts p i{
+    color: var(--primary-color-light); 
+    font-size: 10px;
+}
+#newProducts .productSlider .productCard{
+    position: relative;
+}
+#newProducts .productSlider .options li a i{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    color: var(--hover-color);
+    background-color:var(--light-color);
+}
+#newProducts .productSlider .options li{
+    padding-bottom: 10px;
+}
+
+
+#newProducts .productSlider .options {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.8s ease;
+}
+#newProducts .productSlider .productCard:hover .options{
+    right: 30px;
+    opacity: 1;
+    visibility: visible;
+}
+#newProducts .productSlider .options li:hover  a i{
+    background-color:var(--primary-color-light);
+    color: var(--light-color);
+}
+#newProducts .new{
+    position: relative;
+}
+#newProducts .leftArrow,
+#newProducts .rightArrow{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--light-color);
+    background: var(--hover-color);
+    opacity: 0.5;
+    line-height: 40px;
+    position: absolute;
+    top: 50%;
+    visibility: hidden;
+}
+#newProducts .leftArrow{
+    left: -40px;
+}
+#newProducts .rightArrow{
+    right: -42px;
+}
+#newProducts .leftArrow:hover,
+#newProducts .rightArrow:hover{
+    color: var(--light-color);
+    background: var(--primary-color-light);
+}
+#newProducts:hover .leftArrow,
+#newProducts:hover .rightArrow{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s ease;
+}
+/* new arrivals products section css end */
+
+/* offer section css start */
+#offer{
+background-image: url('../images/ads-section-img.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 525px;
+margin-bottom: 225px;
+position: relative;
+}
+#offer h3{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color: var(--light-color);
+    padding-top: 103px;
+    padding-bottom: 10px;
+}
+#offer p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    max-width: 420px;
+    color: var(--light-color);
+    padding-bottom: 30px;
+}
+#offer a{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: var(--light-color);
+    padding: 13px 38px;
+    border: 1px solid var(--light-color);
+}
+#offer::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: scaleX(0) skew(50deg);
+    background:  var(--a6aab7);
+    opacity: .3;
+}
+#offer:hover:after{
+    transition: 2s;
+    opacity: 0;
+    transform: scaleX(1) skew(50deg);
+}
+/* offer section css end */
+
+
+/* best seller product section css start */
+#bestProducts{
+    padding-bottom: 100px;
+}
+#bestProducts h2{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: var(--text-color);
+    padding-bottom: 16px;
+}
+#bestProducts .newProducts{
+    text-align: center;
+    padding-bottom: 20px;
+    border: 0.5px solid var(--light-color);
+}
+#bestProducts .newProducts h6{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--paragraph-color);
+    padding-bottom: 5px;
+    padding-top: 24px;
+}
+#bestProducts .newProducts h3{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: var(--text-color);
+    padding-bottom: 11px;
+}
+#bestProducts .newProducts p i{
+    color: var(--primary-color-light); 
+    font-size: 10px;
+}
+#bestProducts .bestProducts {
+    display: flex;
+    flex-wrap: wrap;
+}
+#bestProducts .bestProducts .productCard{
+    position: relative;
+}
+#bestProducts .bestProducts .options li a i{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    color: var(--hover-color);
+    background-color:var(--light-color);
+}
+#bestProducts .bestProducts .options li{
+    padding-bottom: 10px;
+}
+#bestProducts .bestProducts .options{
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+#bestProducts .bestProducts .productCard:hover .options{
+    right: 30px;
+    opacity: 1;
+    visibility: visible;
+}
+#bestProducts .bestProducts .options li:hover  a i{
+    background-color:var(--primary-color-light);
+    color: var(--light-color);
+}
+#bestProducts .bestProducts .newProducts{
+    position: relative;
+}
+#bestProducts .bestProducts .newProducts .text_p{
+    background-color:var(--primary-color-dark);
+    border-radius: 15px 0 0 15px;
+    color: #fff;
+    padding: 8px 15px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 24px;
+    transform: rotate(-90deg);
+}
+#bestProducts .bestProducts .button a{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: var(--light-color);
+    padding: 13px 38px;
+    background-color: var(--primary-color-light);
+}
+#bestProducts .bestProducts .button a i{
+    padding-left: 10px;
+}
+#bestProducts .bestProducts .button{
+    margin-top: 50px;
+}
+/* best seller product section end */
+
+/* deals section css start */
+#deals{
+    height: 900px;
+    overflow: hidden;
+}
+#deals h2{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 70px;
+}
+#deals .clock{
+    background-color: var(--light-color);
+    padding: 7px 74px;
+    box-shadow: 0 0 50px 0 rgba(21, 26, 50, 0.1);
+    border-radius: 40px;
+    position: absolute;
+    top: 60px;
+    left: 385px;
+    z-index: 55;
+}
+#deals .clock span{
+    font-size: 60px;
+    color: var(--primary-color-light);
+}
+#deals .clock .clock-card{
+    margin-top: 15px;
+}
+#deals .clock .clock-card h3{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 142%;
+    color: var(--text-color);
+}
+#deals .clock .clock-card p{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    text-align: center;
+    color: var(--paragraph-color);
+}
+#deals .deals-banner{
+    height: 485px;
+    padding: 35px 40px;
+    margin:0 20px 0 0;
+    position: relative;
+}
+#deals .container .row .deals-banner::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff5e;
+    opacity: 1;
+    transform: scaleX(0);
+    pointer-events: none;
+}
+#deals .container .row .deals-banner:hover::after{
+    transform: scaleX(1);
+    opacity: 0;
+    pointer-events: none;
+    transition: 1.5s;
+}
+#deals .container .row .deals-banner::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffffd8;
+    opacity: 1;
+    transform: scaleY(0);
+    pointer-events: none;
+}
+#deals .container .row .deals-banner:hover::before{
+    pointer-events: none;
+    transform: scaleY(1);
+    opacity: 0;
+    transition: 1.5s;
+}
+#deals .deals-banner .deals-banner-text{
+    width: 70%;
+    height: 80%;
+    padding: 20px 0 0;
+}
+#deals .deals-banner .deals-banner-text h4{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: var(--text-color);
+    padding-top: 25px;
+}
+#deals .deals-banner .deals-banner-text h3{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color: var(--text-color); 
+    padding-top: 10px;  
+}
+#deals .deals-banner .deals-banner-text p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color); 
+    padding: 19px 0; 
+}
+#deals .deals-banner .deals-banner-text .price{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--text-color);
+    padding-bottom: 30px;
+}
+#deals .deals-banner .deals-banner-text .price del{
+    color: var(--paragraph-color);
+    margin-left: 10px;
+}
+#deals .deals-banner .deals-banner-text a{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    color: var(--light-color);
+    padding: 13px 27px;
+    background-color: var(--hover-color);
+}
+#deals .deals-section{
+    position: relative;
+}
+#deals .deals-section .deals-slider{
+    padding: 75px 39px;
+    box-shadow: 0 0 50px 0 rgba(21, 26, 50, 0.1);
+    background-color:var(--light-color);
+}
+#deals .bannerDots{
+    padding-top: 20px;
+    position: absolute;
+    top: 100%;
+    left: 48%;
+}
+#deals .bannerDots li{
+    display: inline-block;
+}
+#deals .bannerDots li button{
+    width: 10px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: black;
+    border: none;
+    color: transparent;
+    margin-right: 5.5px;
+}
+#deals .bannerDots li.slick-active button{
+    width: 29px;
+    background-color: var(--primary-color-light);
+}
+/* deals section css end */
+
+/* special offer section css start */
+#special-offer{
+    height: 600px;
+}
+#special-offer .container{
+    overflow: hidden;
+}
+#special-offer .left-side{
+    height: 517px;
+    background:#F1F3F4;
+    align-items: end;
+    padding-right: 100px;
+}
+#special-offer .left-side h3{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--paragraph-color);
+}
+#special-offer .left-side h2{
+    max-width: 442px;
+    width: 100%;
+    font-weight: 700;
+    font-size: clamp(25px, 2.8vw , 36px);
+    line-height: 128%;
+    color: var(--text-color);
+    margin: 10px 0;
+}
+#special-offer .left-side p{
+    max-width: 442px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);
+}
+#special-offer .left-side a{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: var(--light-color);
+    background:var(--primary-color-light);
+    width: fit-content;
+    padding: 15px 23px;
+    margin-top: 30px;
+}
+#special-offer .right-side{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+#special-offer .right-side img{
+    height: 100%;
+    /* width: 100%; */
+}
+#special-offer .right-side a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    display: inline-block;
+    color: var(--primary-color-light);
+    width: 60px;
+    height: 60px;
+    background: var(--light-color);
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50px;
+}
+#special-offer .right-side::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    opacity: 0.3;
+    transform: scaleX(0);
+    top: 0;
+    left: 0;
+}
+#special-offer .right-side:hover::after{
+    opacity: 0;
+    transition: 1s;
+    top: 0;
+    left: 0;
+    transform: scaleX(1);
+}
+#special-offer .right-side::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    opacity: 0.3;
+    transform: scaleY(0);
+}
+#special-offer .right-side:hover::before{
+    opacity: 0;
+    transition: 1.5s;
+    transform: scaleY(1);
+}
+/* special offer section css end */
+
+/* latest news section css start */
+#news{
+    position: relative;
+    padding-bottom: 200px;
+    padding-top: 112px;
+}
+#news h2{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 36px;
+}
+#news .news-card{
+    padding: 20px;
+    box-shadow: 0 0 50px 0 rgba(21, 26, 50, 0.1);
+}
+#news .news-card h3{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--text-color);    
+}
+#news .news-card p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);  
+    padding: 2px 0 4px 0; 
+}
+#news .news-card a{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);    
+}
+#news .news-card .news_footer p{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--paragraph-color);
+}
+#news .bannerDots{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#news .bannerDots li{
+    display: inline-block;
+}
+#news .bannerDots li button{
+    width: 10px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: black;
+    border: none;
+    color: transparent;
+    margin-right: 5.5px;
+}
+#news .bannerDots li.slick-active button{
+    width: 29px;
+    background-color: var(--primary-color-light);
+}
+/* latest news section css end */
+/* main section end */
+
+/* footer section css start */
+
+#footer{
+    height: 610px;
+    background-color: var(--text-color);
+    padding-top: 100px;
+}
+
+/* footer top bar section css start */
+#footer .footer-top-bar{
+    padding-bottom: 70px;
+    padding-top: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+#footer .footer-top-bar .social-links li a{
+    margin-right: 10px;
+}
+#footer .footer-top-bar .social-links li a i{
+    height: 36px;
+    width: 36px;
+    background-color: var(--light-color);
+    text-align: center;
+    line-height: 36px;
+    font-size: 20px;
+    color: var(--paragraph-color);
+}
+#footer .footer-top-bar .social-links li:hover a i{
+    background-color: var(--primary-color-light);
+    color: var(--light-color);
+}
+
+/* footer top bar section css end */
+
+/* footer info section css start */
+#footer .footer-info{
+    width:20%;
+    margin-top: 70px;
+}
+#footer .footer-info h4{
+    margin-bottom: 22px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 142%;
+    color: var(--light-color);
+}
+#footer .footer-info p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--light-color);
+    width: 312px;
+}
+#footer .footer-info .social-link a{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    color: #0f2f44;
+    border: 1px solid #0f2f44;
+    margin: 0 5px;
+}
+#footer .footer-info .social-link a:hover{
+    color: #fff;
+    background-color: #0f2f44;
+}
+#footer .footer-info .contact{
+    color: #777777;
+}
+#footer .footer-info .contact .cont-detail{
+    display: flex;
+    margin-bottom: 15px;
+}
+#footer .footer-info .contact .cont-detail .icon{
+    width: 20%;
+    font-size: large;
+}
+#footer .footer-info .contact .cont-detail .icon i{
+color: var(--primary-color-dark);
+}
+#footer .footer-info .contact .cont-detail .box,
+#footer .footer-info .contact .cont-detail .box a{
+    width: 230px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--light-color);
+}
+#footer .footer-info li {
+    margin: 15px 0;
+}
+#footer .footer-info li a{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--light-color);
+}
+#footer .footer-info li a i{
+    margin-right: 10px;
+}
+#footer .footer-info li:hover a{
+    color:var(--primary-color-light);
+    padding-left: 20px;
+}
+#footer .footer-info pre{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--light-color);
+}
+#footer .footer-info pre span{
+    font-weight: 400;
+}
+#footer .footer-info .subscrive input{
+    width: 115px;
+    height: 50px;
+    background-color: var(--light-color);
+    border: none;
+}
+#footer .footer-info .subscrive a{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 12px;
+    width: 200px;
+    height: 50px;
+    line-height: 167%;
+    text-align: center;
+    color: var(--light-color);
+    background-color: #FF6565;
+    border: none;
+    padding-top: 16px;
+}
+#footer .footer-info .subscrive a:hover{
+    font-size: 13px ;
+}
+#footer .footer-info .subscrive {
+    margin-top: 50px;
+}
+
+/* footer info section css end */
+
+/* footer overlay section css start */
+#footer .overlay .help-info{
+    border-left: 4px solid var(--primary-color-light);
+}
+#footer .overlay .help-info a img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    line-height: 70px;
+    text-align: center;
+    margin-right: 10px;
+    background-color: var(--primary-color-light);
+    margin-left: 41px;
+}
+#footer .overlay .help-info .right{
+    padding-right: 40px;
+}
+#footer .overlay .help-info:nth-child(1){
+    border-left: transparent;
+}
+#footer .overlay .help-info h5{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--text-color);
+}
+#footer .overlay .help-info p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);
+}
+#footer .container{
+    position: relative;
+}
+#footer .overlay{
+    background-color: #fff;
+    padding: 39px 0;
+    position: absolute;
+    top: -200px;
+    left: 10px;
+    box-shadow: 0 0 50px 0 rgba(21, 26, 50, 0.1);
+}
+/* footer overlay section css end */
+/* footer section css end */
+
